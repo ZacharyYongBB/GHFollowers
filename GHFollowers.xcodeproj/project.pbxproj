@@ -24,6 +24,8 @@
 		B6AA7FDF2BA2E04400B78709 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FDE2BA2E04400B78709 /* UserModel.swift */; };
 		B6AA7FE22BA2E6F900B78709 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FE12BA2E6F900B78709 /* NetworkManager.swift */; };
 		B6AA7FE52BA2F02100B78709 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FE42BA2F02100B78709 /* ErrorMessage.swift */; };
+		B6AA7FE82BA2F62D00B78709 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FE72BA2F62D00B78709 /* FollowerCell.swift */; };
+		B6AA7FEA2BA2F69200B78709 /* CustomAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FE92BA2F69200B78709 /* CustomAvatarImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +48,8 @@
 		B6AA7FDE2BA2E04400B78709 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		B6AA7FE12BA2E6F900B78709 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B6AA7FE42BA2F02100B78709 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
+		B6AA7FE72BA2F62D00B78709 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
+		B6AA7FE92BA2F69200B78709 /* CustomAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAvatarImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,11 +107,13 @@
 		B6AA7FD82BA233A900B78709 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				B6AA7FE62BA2F60100B78709 /* Cells */,
 				B6AA7FD32BA22B9100B78709 /* CustomAlertViewController.swift */,
 				B6AA7FC92BA0DBBA00B78709 /* CustomButton.swift */,
 				B6AA7FCB2BA0DFA100B78709 /* CustomTextField.swift */,
 				B6AA7FCF2BA229DE00B78709 /* CustomTitleLabel.swift */,
 				B6AA7FD12BA22AF700B78709 /* CustomBodyLabel.swift */,
+				B6AA7FE92BA2F69200B78709 /* CustomAvatarImageView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -154,6 +160,14 @@
 				B6AA7FE42BA2F02100B78709 /* ErrorMessage.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B6AA7FE62BA2F60100B78709 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B6AA7FE72BA2F62D00B78709 /* FollowerCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +247,10 @@
 				B6AA7FCC2BA0DFA100B78709 /* CustomTextField.swift in Sources */,
 				B6AA7FDF2BA2E04400B78709 /* UserModel.swift in Sources */,
 				B6AA7FDD2BA2DFA900B78709 /* FollowerModel.swift in Sources */,
+				B6AA7FE82BA2F62D00B78709 /* FollowerCell.swift in Sources */,
 				B6AA7FE52BA2F02100B78709 /* ErrorMessage.swift in Sources */,
 				B6AA7FB22BA0D2F600B78709 /* AppDelegate.swift in Sources */,
+				B6AA7FEA2BA2F69200B78709 /* CustomAvatarImageView.swift in Sources */,
 				B6AA7FB42BA0D2F600B78709 /* SceneDelegate.swift in Sources */,
 				B6AA7FD42BA22B9100B78709 /* CustomAlertViewController.swift in Sources */,
 				B6AA7FE22BA2E6F900B78709 /* NetworkManager.swift in Sources */,
