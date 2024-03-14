@@ -20,6 +20,9 @@
 		B6AA7FD22BA22AF700B78709 /* CustomBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FD12BA22AF700B78709 /* CustomBodyLabel.swift */; };
 		B6AA7FD42BA22B9100B78709 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FD32BA22B9100B78709 /* CustomAlertViewController.swift */; };
 		B6AA7FD62BA230C200B78709 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FD52BA230C200B78709 /* UIViewController+Ext.swift */; };
+		B6AA7FDD2BA2DFA900B78709 /* FollowerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FDC2BA2DFA900B78709 /* FollowerModel.swift */; };
+		B6AA7FDF2BA2E04400B78709 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FDE2BA2E04400B78709 /* UserModel.swift */; };
+		B6AA7FE22BA2E6F900B78709 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FE12BA2E6F900B78709 /* NetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		B6AA7FD12BA22AF700B78709 /* CustomBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBodyLabel.swift; sourceTree = "<group>"; };
 		B6AA7FD32BA22B9100B78709 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		B6AA7FD52BA230C200B78709 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		B6AA7FDC2BA2DFA900B78709 /* FollowerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerModel.swift; sourceTree = "<group>"; };
+		B6AA7FDE2BA2E04400B78709 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		B6AA7FE12BA2E6F900B78709 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +76,9 @@
 		B6AA7FB02BA0D2F600B78709 /* GHFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				B6AA7FBF2BA0D2F800B78709 /* Info.plist */,
+				B6AA7FE02BA2E6CF00B78709 /* Managers */,
+				B6AA7FDB2BA2DF9C00B78709 /* Model */,
 				B6AA7FDA2BA2344500B78709 /* Support */,
 				B6AA7FD92BA233DF00B78709 /* Extension */,
 				B6AA7FD82BA233A900B78709 /* CustomViews */,
@@ -113,11 +122,27 @@
 			children = (
 				B6AA7FBA2BA0D2F800B78709 /* Assets.xcassets */,
 				B6AA7FBC2BA0D2F800B78709 /* LaunchScreen.storyboard */,
-				B6AA7FBF2BA0D2F800B78709 /* Info.plist */,
 				B6AA7FB12BA0D2F600B78709 /* AppDelegate.swift */,
 				B6AA7FB32BA0D2F600B78709 /* SceneDelegate.swift */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		B6AA7FDB2BA2DF9C00B78709 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B6AA7FDC2BA2DFA900B78709 /* FollowerModel.swift */,
+				B6AA7FDE2BA2E04400B78709 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B6AA7FE02BA2E6CF00B78709 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B6AA7FE12BA2E6F900B78709 /* NetworkManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,9 +220,12 @@
 				B6AA7FD22BA22AF700B78709 /* CustomBodyLabel.swift in Sources */,
 				B6AA7FD62BA230C200B78709 /* UIViewController+Ext.swift in Sources */,
 				B6AA7FCC2BA0DFA100B78709 /* CustomTextField.swift in Sources */,
+				B6AA7FDF2BA2E04400B78709 /* UserModel.swift in Sources */,
+				B6AA7FDD2BA2DFA900B78709 /* FollowerModel.swift in Sources */,
 				B6AA7FB22BA0D2F600B78709 /* AppDelegate.swift in Sources */,
 				B6AA7FB42BA0D2F600B78709 /* SceneDelegate.swift in Sources */,
 				B6AA7FD42BA22B9100B78709 /* CustomAlertViewController.swift in Sources */,
+				B6AA7FE22BA2E6F900B78709 /* NetworkManager.swift in Sources */,
 				B6AA7FCA2BA0DBBA00B78709 /* CustomButton.swift in Sources */,
 				B6AA7FD02BA229DE00B78709 /* CustomTitleLabel.swift in Sources */,
 				B6AA7FCE2BA2247E00B78709 /* FollowerListViewController.swift in Sources */,
@@ -350,6 +378,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -380,6 +409,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
