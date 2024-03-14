@@ -18,7 +18,7 @@ class FollowerListViewController: UIViewController {
         
         NetworkManager.shared.getFollowers(username: username ?? "", page: 1) { followers, errorMessage in
             guard let followers = followers else {
-                self.presentCustomAlertOnMainThread(title: "Something Went wrong", message: errorMessage ?? "Unable to find username", buttonTitle: "OK")
+                self.presentCustomAlertOnMainThread(title: "Something Went wrong", message: errorMessage?.rawValue ?? "Error, please try again", buttonTitle: "OK")
                 return
             }
             
