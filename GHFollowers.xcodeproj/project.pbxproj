@@ -26,6 +26,7 @@
 		B6AA7FE52BA2F02100B78709 /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FE42BA2F02100B78709 /* ErrorMessage.swift */; };
 		B6AA7FE82BA2F62D00B78709 /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FE72BA2F62D00B78709 /* FollowerCell.swift */; };
 		B6AA7FEA2BA2F69200B78709 /* CustomAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FE92BA2F69200B78709 /* CustomAvatarImageView.swift */; };
+		B6AA7FEC2BA3819100B78709 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FEB2BA3819100B78709 /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		B6AA7FE42BA2F02100B78709 /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		B6AA7FE72BA2F62D00B78709 /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		B6AA7FE92BA2F69200B78709 /* CustomAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAvatarImageView.swift; sourceTree = "<group>"; };
+		B6AA7FEB2BA3819100B78709 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				B6AA7FE42BA2F02100B78709 /* ErrorMessage.swift */,
+				B6AA7FEB2BA3819100B78709 /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				B6AA7FD22BA22AF700B78709 /* CustomBodyLabel.swift in Sources */,
 				B6AA7FD62BA230C200B78709 /* UIViewController+Ext.swift in Sources */,
 				B6AA7FCC2BA0DFA100B78709 /* CustomTextField.swift in Sources */,
+				B6AA7FEC2BA3819100B78709 /* UIHelper.swift in Sources */,
 				B6AA7FDF2BA2E04400B78709 /* UserModel.swift in Sources */,
 				B6AA7FDD2BA2DFA900B78709 /* FollowerModel.swift in Sources */,
 				B6AA7FE82BA2F62D00B78709 /* FollowerCell.swift in Sources */,
