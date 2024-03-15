@@ -28,6 +28,7 @@
 		B6AA7FEA2BA2F69200B78709 /* CustomAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FE92BA2F69200B78709 /* CustomAvatarImageView.swift */; };
 		B6AA7FEC2BA3819100B78709 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FEB2BA3819100B78709 /* UIHelper.swift */; };
 		B6AA7FF42BA4AC5200B78709 /* CustomEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FF32BA4AC5200B78709 /* CustomEmptyStateView.swift */; };
+		B6AA7FF62BA4B4E900B78709 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FF52BA4B4E900B78709 /* UserInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		B6AA7FE92BA2F69200B78709 /* CustomAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAvatarImageView.swift; sourceTree = "<group>"; };
 		B6AA7FEB2BA3819100B78709 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		B6AA7FF32BA4AC5200B78709 /* CustomEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEmptyStateView.swift; sourceTree = "<group>"; };
+		B6AA7FF52BA4B4E900B78709 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				B6AA7FC72BA0D83D00B78709 /* FavouritesListViewController.swift */,
 				B6AA7FCD2BA2247E00B78709 /* FollowerListViewController.swift */,
 				B6AA7FC52BA0D80600B78709 /* SearchViewController.swift */,
+				B6AA7FF52BA4B4E900B78709 /* UserInfoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 				B6AA7FD42BA22B9100B78709 /* CustomAlertViewController.swift in Sources */,
 				B6AA7FE22BA2E6F900B78709 /* NetworkManager.swift in Sources */,
 				B6AA7FCA2BA0DBBA00B78709 /* CustomButton.swift in Sources */,
+				B6AA7FF62BA4B4E900B78709 /* UserInfoViewController.swift in Sources */,
 				B6AA7FD02BA229DE00B78709 /* CustomTitleLabel.swift in Sources */,
 				B6AA7FCE2BA2247E00B78709 /* FollowerListViewController.swift in Sources */,
 			);
