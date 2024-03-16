@@ -8,7 +8,7 @@
 import UIKit
 
 class CustomButton: UIButton {
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
@@ -30,6 +30,11 @@ class CustomButton: UIButton {
         setTitleColor(.white, for: .normal)
         titleLabel?.font = UIFont.preferredFont(forTextStyle: .headline)
         translatesAutoresizingMaskIntoConstraints = false
+    }
+    
+    func set(backgroundColor: UIColor, title: String) {
+        self.backgroundColor = backgroundColor
+        setTitle(title, for: .normal)
     }
     
 }
