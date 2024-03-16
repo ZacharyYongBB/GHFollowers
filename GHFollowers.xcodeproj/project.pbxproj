@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B6A1B3DB2BA5B06E005F6A67 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1B3DA2BA5B06E005F6A67 /* PersistenceManager.swift */; };
+		B6A1B3DD2BA5B7D8005F6A67 /* FavouriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1B3DC2BA5B7D8005F6A67 /* FavouriteCell.swift */; };
 		B6AA7FB22BA0D2F600B78709 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FB12BA0D2F600B78709 /* AppDelegate.swift */; };
 		B6AA7FB42BA0D2F600B78709 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FB32BA0D2F600B78709 /* SceneDelegate.swift */; };
 		B6AA7FBB2BA0D2F800B78709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AA7FBA2BA0D2F800B78709 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		B6A1B3DA2BA5B06E005F6A67 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		B6A1B3DC2BA5B7D8005F6A67 /* FavouriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteCell.swift; sourceTree = "<group>"; };
 		B6AA7FAE2BA0D2F600B78709 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AA7FB12BA0D2F600B78709 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6AA7FB32BA0D2F600B78709 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				B6AA7FE72BA2F62D00B78709 /* FollowerCell.swift */,
+				B6A1B3DC2BA5B7D8005F6A67 /* FavouriteCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6A1B3DD2BA5B7D8005F6A67 /* FavouriteCell.swift in Sources */,
 				B6AA7FC82BA0D83D00B78709 /* FavouritesListViewController.swift in Sources */,
 				B6AA7FC62BA0D80600B78709 /* SearchViewController.swift in Sources */,
 				B6AA7FD22BA22AF700B78709 /* CustomBodyLabel.swift in Sources */,
