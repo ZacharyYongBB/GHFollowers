@@ -20,5 +20,9 @@ class CustomFollowItemViewController: CustomItemInfoViewController {
         actionButton.set(backgroundColor: .systemTeal, title: "Get Followers")
     }
     
+    override func actionButtonTapped() {
+        delegate.didTapGetFollowers(user: user)
+    }
+    
 }
 

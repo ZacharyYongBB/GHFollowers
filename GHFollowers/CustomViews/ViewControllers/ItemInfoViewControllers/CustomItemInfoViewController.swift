@@ -15,7 +15,7 @@ class CustomItemInfoViewController: UIViewController {
     let actionButton = CustomButton()
     
     var user: UserModel!
-    var delegate: UserInfoVCDelegate!
+    weak var delegate: UserInfoVCDelegate!
     
     init(user: UserModel!) {
         super.init(nibName: nil, bundle: nil)
