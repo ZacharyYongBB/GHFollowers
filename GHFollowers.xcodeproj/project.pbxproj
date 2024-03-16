@@ -32,6 +32,8 @@
 		B6AA7FF82BA4DD5000B78709 /* CustomUserInfoHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FF72BA4DD5000B78709 /* CustomUserInfoHeaderViewController.swift */; };
 		B6AA7FFC2BA4DDCD00B78709 /* CustomSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FFB2BA4DDCD00B78709 /* CustomSecondaryTitleLabel.swift */; };
 		B6AA7FFE2BA4E2C500B78709 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FFD2BA4E2C500B78709 /* Consts.swift */; };
+		B6AA80002BA58E5B00B78709 /* CustomItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FFF2BA58E5B00B78709 /* CustomItemInfoView.swift */; };
+		B6AA80022BA5921200B78709 /* CustomItemInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA80012BA5921200B78709 /* CustomItemInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		B6AA7FF72BA4DD5000B78709 /* CustomUserInfoHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUserInfoHeaderViewController.swift; sourceTree = "<group>"; };
 		B6AA7FFB2BA4DDCD00B78709 /* CustomSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		B6AA7FFD2BA4E2C500B78709 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
+		B6AA7FFF2BA58E5B00B78709 /* CustomItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomItemInfoView.swift; sourceTree = "<group>"; };
+		B6AA80012BA5921200B78709 /* CustomItemInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomItemInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				B6AA7FF32BA4AC5200B78709 /* CustomEmptyStateView.swift */,
+				B6AA7FFF2BA58E5B00B78709 /* CustomItemInfoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 			children = (
 				B6AA7FD32BA22B9100B78709 /* CustomAlertViewController.swift */,
 				B6AA7FF72BA4DD5000B78709 /* CustomUserInfoHeaderViewController.swift */,
+				B6AA80012BA5921200B78709 /* CustomItemInfoViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -310,6 +316,7 @@
 				B6AA7FC62BA0D80600B78709 /* SearchViewController.swift in Sources */,
 				B6AA7FD22BA22AF700B78709 /* CustomBodyLabel.swift in Sources */,
 				B6AA7FD62BA230C200B78709 /* UIViewController+Ext.swift in Sources */,
+				B6AA80002BA58E5B00B78709 /* CustomItemInfoView.swift in Sources */,
 				B6AA7FCC2BA0DFA100B78709 /* CustomTextField.swift in Sources */,
 				B6AA7FEC2BA3819100B78709 /* UIHelper.swift in Sources */,
 				B6AA7FDF2BA2E04400B78709 /* UserModel.swift in Sources */,
@@ -324,6 +331,7 @@
 				B6AA7FB42BA0D2F600B78709 /* SceneDelegate.swift in Sources */,
 				B6AA7FD42BA22B9100B78709 /* CustomAlertViewController.swift in Sources */,
 				B6AA7FE22BA2E6F900B78709 /* NetworkManager.swift in Sources */,
+				B6AA80022BA5921200B78709 /* CustomItemInfoViewController.swift in Sources */,
 				B6AA7FCA2BA0DBBA00B78709 /* CustomButton.swift in Sources */,
 				B6AA7FF62BA4B4E900B78709 /* UserInfoViewController.swift in Sources */,
 				B6AA7FF82BA4DD5000B78709 /* CustomUserInfoHeaderViewController.swift in Sources */,
