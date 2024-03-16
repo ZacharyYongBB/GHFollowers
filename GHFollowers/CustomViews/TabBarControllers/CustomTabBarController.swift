@@ -8,22 +8,28 @@
 import UIKit
 
 class CustomTabBarController: UITabBarController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        UITabBar.appearance().tintColor = .systemGreen
+        viewControllers = [createSearchNavigationController(), createFavouritesNavigationController()]
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func createSearchNavigationController() -> UINavigationController {
+        let searchVC = SearchViewController()
+        searchVC.title = "Search"
+        searchVC.tabBarItem = UITabBarItem(tabBarSystemItem: .search, tag: 0)
+        
+        return UINavigationController(rootViewController: searchVC)
     }
-    */
-
+    
+    func createFavouritesNavigationController() -> UINavigationController {
+        let favouritesListVC = FavouritesListViewController()
+        favouritesListVC.title = "Favourites"
+        favouritesListVC.tabBarItem = UITabBarItem(tabBarSystemItem: .favorites, tag: 1)
+        
+        return UINavigationController(rootViewController: favouritesListVC)
+    }
+    
 }
