@@ -11,6 +11,7 @@
 		B6A1B3DD2BA5B7D8005F6A67 /* FavouriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1B3DC2BA5B7D8005F6A67 /* FavouriteCell.swift */; };
 		B6A1B3E02BA60DC2005F6A67 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1B3DF2BA60DC2005F6A67 /* CustomTabBarController.swift */; };
 		B6A1B3E22BA61464005F6A67 /* CustomAlertContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1B3E12BA61464005F6A67 /* CustomAlertContainerView.swift */; };
+		B6A1B3E42BA61AC8005F6A67 /* CustomDataLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1B3E32BA61AC8005F6A67 /* CustomDataLoadingViewController.swift */; };
 		B6AA7FB22BA0D2F600B78709 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FB12BA0D2F600B78709 /* AppDelegate.swift */; };
 		B6AA7FB42BA0D2F600B78709 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FB32BA0D2F600B78709 /* SceneDelegate.swift */; };
 		B6AA7FBB2BA0D2F800B78709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AA7FBA2BA0D2F800B78709 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		B6A1B3DC2BA5B7D8005F6A67 /* FavouriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteCell.swift; sourceTree = "<group>"; };
 		B6A1B3DF2BA60DC2005F6A67 /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		B6A1B3E12BA61464005F6A67 /* CustomAlertContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertContainerView.swift; sourceTree = "<group>"; };
+		B6A1B3E32BA61AC8005F6A67 /* CustomDataLoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDataLoadingViewController.swift; sourceTree = "<group>"; };
 		B6AA7FAE2BA0D2F600B78709 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AA7FB12BA0D2F600B78709 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6AA7FB32BA0D2F600B78709 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -258,6 +260,7 @@
 				B6AA80092BA5966F00B78709 /* ItemInfoViewControllers */,
 				B6AA7FD32BA22B9100B78709 /* CustomAlertViewController.swift */,
 				B6AA7FF72BA4DD5000B78709 /* CustomUserInfoHeaderViewController.swift */,
+				B6A1B3E32BA61AC8005F6A67 /* CustomDataLoadingViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -382,6 +385,7 @@
 				B6AA7FCA2BA0DBBA00B78709 /* CustomButton.swift in Sources */,
 				B6AA80082BA5962400B78709 /* CustomFollowItemViewController.swift in Sources */,
 				B6AA7FF62BA4B4E900B78709 /* UserInfoViewController.swift in Sources */,
+				B6A1B3E42BA61AC8005F6A67 /* CustomDataLoadingViewController.swift in Sources */,
 				B6AA7FF82BA4DD5000B78709 /* CustomUserInfoHeaderViewController.swift in Sources */,
 				B6AA7FD02BA229DE00B78709 /* CustomTitleLabel.swift in Sources */,
 				B6AA7FCE2BA2247E00B78709 /* FollowerListViewController.swift in Sources */,
