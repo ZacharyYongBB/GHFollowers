@@ -36,6 +36,8 @@
 		B6AA80022BA5921200B78709 /* CustomItemInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA80012BA5921200B78709 /* CustomItemInfoViewController.swift */; };
 		B6AA80062BA5954400B78709 /* CustomRepoItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA80052BA5954400B78709 /* CustomRepoItemViewController.swift */; };
 		B6AA80082BA5962400B78709 /* CustomFollowItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA80072BA5962400B78709 /* CustomFollowItemViewController.swift */; };
+		B6AA800B2BA5987200B78709 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA800A2BA5987200B78709 /* Date+Ext.swift */; };
+		B6AA800D2BA5989900B78709 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA800C2BA5989900B78709 /* String+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		B6AA80012BA5921200B78709 /* CustomItemInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomItemInfoViewController.swift; sourceTree = "<group>"; };
 		B6AA80052BA5954400B78709 /* CustomRepoItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRepoItemViewController.swift; sourceTree = "<group>"; };
 		B6AA80072BA5962400B78709 /* CustomFollowItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFollowItemViewController.swift; sourceTree = "<group>"; };
+		B6AA800A2BA5987200B78709 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
+		B6AA800C2BA5989900B78709 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				B6AA7FD52BA230C200B78709 /* UIViewController+Ext.swift */,
+				B6AA800A2BA5987200B78709 /* Date+Ext.swift */,
+				B6AA800C2BA5989900B78709 /* String+Ext.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -329,6 +335,7 @@
 				B6AA7FC82BA0D83D00B78709 /* FavouritesListViewController.swift in Sources */,
 				B6AA7FC62BA0D80600B78709 /* SearchViewController.swift in Sources */,
 				B6AA7FD22BA22AF700B78709 /* CustomBodyLabel.swift in Sources */,
+				B6AA800D2BA5989900B78709 /* String+Ext.swift in Sources */,
 				B6AA7FD62BA230C200B78709 /* UIViewController+Ext.swift in Sources */,
 				B6AA80002BA58E5B00B78709 /* CustomItemInfoView.swift in Sources */,
 				B6AA7FCC2BA0DFA100B78709 /* CustomTextField.swift in Sources */,
@@ -345,6 +352,7 @@
 				B6AA7FEA2BA2F69200B78709 /* CustomAvatarImageView.swift in Sources */,
 				B6AA7FB42BA0D2F600B78709 /* SceneDelegate.swift in Sources */,
 				B6AA7FD42BA22B9100B78709 /* CustomAlertViewController.swift in Sources */,
+				B6AA800B2BA5987200B78709 /* Date+Ext.swift in Sources */,
 				B6AA7FE22BA2E6F900B78709 /* NetworkManager.swift in Sources */,
 				B6AA80022BA5921200B78709 /* CustomItemInfoViewController.swift in Sources */,
 				B6AA7FCA2BA0DBBA00B78709 /* CustomButton.swift in Sources */,

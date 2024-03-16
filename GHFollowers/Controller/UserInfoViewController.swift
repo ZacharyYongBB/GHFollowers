@@ -12,6 +12,7 @@ class UserInfoViewController: UIViewController {
     let headerView = UIView()
     let itemView1 = UIView()
     let itemView2 = UIView()
+    let dateLabel = CustomBodyLabel(textAlignment: .center)
     var itemViews: [UIView] = []
     
     var username: String = ""
@@ -38,6 +39,7 @@ class UserInfoViewController: UIViewController {
                     self.add(childVC: CustomUserInfoHeaderViewController(user: user), to: self.headerView)
                     self.add(childVC: CustomRepoItemViewController(user: user), to: self.itemView1)
                     self.add(childVC: CustomFollowItemViewController(user: user), to: self.itemView2)
+                    self.dateLabel.text = "GitHub Since: \(user.createdAt.convertToDisplayFormat())"
                 }
             case .failure(let error):
                 self.presentCustomAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "OK")
@@ -46,7 +48,7 @@ class UserInfoViewController: UIViewController {
     }
     
     func layoutUI() {
-        itemViews = [headerView, itemView1, itemView2]
+        itemViews = [headerView, itemView1, itemView2, dateLabel]
         
         let padding: CGFloat = 20
         let itemHeight: CGFloat = 140
@@ -70,6 +72,9 @@ class UserInfoViewController: UIViewController {
             
             itemView2.topAnchor.constraint(equalTo: itemView1.bottomAnchor, constant: padding),
             itemView2.heightAnchor.constraint(equalToConstant: itemHeight),
+            
+            dateLabel.topAnchor.constraint(equalTo: itemView2.bottomAnchor, constant: padding),
+            dateLabel.heightAnchor.constraint(equalToConstant: 18),
         ])
     }
     
