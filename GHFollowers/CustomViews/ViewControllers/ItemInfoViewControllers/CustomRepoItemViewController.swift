@@ -20,4 +20,8 @@ class CustomRepoItemViewController: CustomItemInfoViewController {
         actionButton.set(backgroundColor: .systemPurple, title: "GitHub Profile")
     }
     
+    override func actionButtonTapped() {
+        delegate.didTapGitHubProfile(user: user)
+    }
+    
 }

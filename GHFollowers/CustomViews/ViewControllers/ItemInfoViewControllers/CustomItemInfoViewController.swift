@@ -15,6 +15,7 @@ class CustomItemInfoViewController: UIViewController {
     let actionButton = CustomButton()
     
     var user: UserModel!
+    var delegate: UserInfoVCDelegate!
     
     init(user: UserModel!) {
         super.init(nibName: nil, bundle: nil)
@@ -28,6 +29,7 @@ class CustomItemInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureBackgroundView()
+        configureActionButton()
         layoutUI()
         configureStackView()
     }
@@ -43,6 +45,14 @@ class CustomItemInfoViewController: UIViewController {
         
         stackView.addArrangedSubview(itemInfoView1)
         stackView.addArrangedSubview(itemInfoView2)
+    }
+    
+    @objc func actionButtonTapped() {
+        
+    }
+    
+    private func configureActionButton() {
+        actionButton.addTarget(self, action: #selector(actionButtonTapped), for: .touchUpInside)
     }
     
     private func layoutUI() {
