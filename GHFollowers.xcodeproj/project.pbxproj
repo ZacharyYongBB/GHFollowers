@@ -29,6 +29,9 @@
 		B6AA7FEC2BA3819100B78709 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FEB2BA3819100B78709 /* UIHelper.swift */; };
 		B6AA7FF42BA4AC5200B78709 /* CustomEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FF32BA4AC5200B78709 /* CustomEmptyStateView.swift */; };
 		B6AA7FF62BA4B4E900B78709 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FF52BA4B4E900B78709 /* UserInfoViewController.swift */; };
+		B6AA7FF82BA4DD5000B78709 /* CustomUserInfoHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FF72BA4DD5000B78709 /* CustomUserInfoHeaderViewController.swift */; };
+		B6AA7FFC2BA4DDCD00B78709 /* CustomSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FFB2BA4DDCD00B78709 /* CustomSecondaryTitleLabel.swift */; };
+		B6AA7FFE2BA4E2C500B78709 /* Consts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FFD2BA4E2C500B78709 /* Consts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		B6AA7FEB2BA3819100B78709 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		B6AA7FF32BA4AC5200B78709 /* CustomEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomEmptyStateView.swift; sourceTree = "<group>"; };
 		B6AA7FF52BA4B4E900B78709 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		B6AA7FF72BA4DD5000B78709 /* CustomUserInfoHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUserInfoHeaderViewController.swift; sourceTree = "<group>"; };
+		B6AA7FFB2BA4DDCD00B78709 /* CustomSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecondaryTitleLabel.swift; sourceTree = "<group>"; };
+		B6AA7FFD2BA4E2C500B78709 /* Consts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +172,7 @@
 			children = (
 				B6AA7FE42BA2F02100B78709 /* ErrorMessage.swift */,
 				B6AA7FEB2BA3819100B78709 /* UIHelper.swift */,
+				B6AA7FFD2BA4E2C500B78709 /* Consts.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -214,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				B6AA7FD32BA22B9100B78709 /* CustomAlertViewController.swift */,
+				B6AA7FF72BA4DD5000B78709 /* CustomUserInfoHeaderViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -223,6 +231,7 @@
 			children = (
 				B6AA7FCF2BA229DE00B78709 /* CustomTitleLabel.swift */,
 				B6AA7FD12BA22AF700B78709 /* CustomBodyLabel.swift */,
+				B6AA7FFB2BA4DDCD00B78709 /* CustomSecondaryTitleLabel.swift */,
 			);
 			path = Labels;
 			sourceTree = "<group>";
@@ -304,6 +313,8 @@
 				B6AA7FCC2BA0DFA100B78709 /* CustomTextField.swift in Sources */,
 				B6AA7FEC2BA3819100B78709 /* UIHelper.swift in Sources */,
 				B6AA7FDF2BA2E04400B78709 /* UserModel.swift in Sources */,
+				B6AA7FFC2BA4DDCD00B78709 /* CustomSecondaryTitleLabel.swift in Sources */,
+				B6AA7FFE2BA4E2C500B78709 /* Consts.swift in Sources */,
 				B6AA7FDD2BA2DFA900B78709 /* FollowerModel.swift in Sources */,
 				B6AA7FF42BA4AC5200B78709 /* CustomEmptyStateView.swift in Sources */,
 				B6AA7FE82BA2F62D00B78709 /* FollowerCell.swift in Sources */,
@@ -315,6 +326,7 @@
 				B6AA7FE22BA2E6F900B78709 /* NetworkManager.swift in Sources */,
 				B6AA7FCA2BA0DBBA00B78709 /* CustomButton.swift in Sources */,
 				B6AA7FF62BA4B4E900B78709 /* UserInfoViewController.swift in Sources */,
+				B6AA7FF82BA4DD5000B78709 /* CustomUserInfoHeaderViewController.swift in Sources */,
 				B6AA7FD02BA229DE00B78709 /* CustomTitleLabel.swift in Sources */,
 				B6AA7FCE2BA2247E00B78709 /* FollowerListViewController.swift in Sources */,
 			);
