@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B6A1B3DB2BA5B06E005F6A67 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A1B3DA2BA5B06E005F6A67 /* PersistenceManager.swift */; };
 		B6AA7FB22BA0D2F600B78709 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FB12BA0D2F600B78709 /* AppDelegate.swift */; };
 		B6AA7FB42BA0D2F600B78709 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AA7FB32BA0D2F600B78709 /* SceneDelegate.swift */; };
 		B6AA7FBB2BA0D2F800B78709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6AA7FBA2BA0D2F800B78709 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B6A1B3DA2BA5B06E005F6A67 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
 		B6AA7FAE2BA0D2F600B78709 /* GHFollowers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GHFollowers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6AA7FB12BA0D2F600B78709 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6AA7FB32BA0D2F600B78709 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 			isa = PBXGroup;
 			children = (
 				B6AA7FE12BA2E6F900B78709 /* NetworkManager.swift */,
+				B6A1B3DA2BA5B06E005F6A67 /* PersistenceManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 				B6AA7FB42BA0D2F600B78709 /* SceneDelegate.swift in Sources */,
 				B6AA7FD42BA22B9100B78709 /* CustomAlertViewController.swift in Sources */,
 				B6AA800B2BA5987200B78709 /* Date+Ext.swift in Sources */,
+				B6A1B3DB2BA5B06E005F6A67 /* PersistenceManager.swift in Sources */,
 				B6AA7FE22BA2E6F900B78709 /* NetworkManager.swift in Sources */,
 				B6AA80022BA5921200B78709 /* CustomItemInfoViewController.swift in Sources */,
 				B6AA7FCA2BA0DBBA00B78709 /* CustomButton.swift in Sources */,
