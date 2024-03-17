@@ -73,25 +73,61 @@ class FollowerListViewController: CustomDataLoadingViewController {
     
     func getFollowers(username: String, page: Int) {
         showLoadingView()
-        NetworkManager.shared.getFollowers(username: username, page: page) { [weak self] result in
-            guard let self = self else { return }
-            self.dismissLoadingView()
-            switch result {
-            case .success(let followers):
-                if followers.count < 100 { self.hasMoreFollowers = false }
-                self.followers.append(contentsOf: followers)
-                if self.followers.isEmpty {
-                    let message = "This user doesn't have any followers yet. 😕😕☹️😭😢😩🥺"
-                    DispatchQueue.main.async {
-                        self.showEmptyStateView(with: message, in: self.view)
+        /*
+                NetworkManager.shared.getFollowers(username: username, page: page) { [weak self] result in
+                    guard let self = self else { return }
+                    self.dismissLoadingView()
+                    switch result {
+                    case .success(let followers):
+                        if followers.count < 100 { self.hasMoreFollowers = false }
+                        self.followers.append(contentsOf: followers)
+                        if self.followers.isEmpty {
+                            let message = "This user doesn't have any followers yet. 😕😕☹️😭😢😩🥺"
+                            DispatchQueue.main.async {
+                                self.showEmptyStateView(with: message, in: self.view)
+                            }
+                            return
+                        }
+                        self.updateData(on: self.followers)
+                    case .failure(let error):
+                        self.presentCustomAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "OK")
                     }
-                    return
                 }
-                self.updateData(on: self.followers)
-            case .failure(let error):
-                self.presentCustomAlertOnMainThread(title: "Something went wrong", message: error.rawValue, buttonTitle: "OK")
+        */
+        Task {
+            do {
+                let followers = try await NetworkManager.shared.getFollowers(username: username, page: page)
+                updateUI(followers: followers)
+                isLoading = false
+            } catch {
+                if let customError = error as? ErrorMessage {
+                    presentCustomAlertOnMainThread(title: "Something went wrong!", message: customError.rawValue, buttonTitle: "OK")
+                } else {
+                    presentDefaultError()
+                }
             }
+            dismissLoadingView()
+            
+//            guard let followers = try? await NetworkManager.shared.getFollowers(username: username, page: page) else {
+//                presentDefaultError()
+//                return
+//            }
+//            updateUI(followers: followers)
+//            dismissLoadingView()
         }
+    }
+    
+    func updateUI(followers: [FollowerModel]) {
+        if followers.count < 100 { self.hasMoreFollowers = false }
+        self.followers.append(contentsOf: followers)
+        if self.followers.isEmpty {
+            let message = "This user doesn't have any followers yet. 😕😕☹️😭😢😩🥺"
+            DispatchQueue.main.async {
+                self.showEmptyStateView(with: message, in: self.view)
+            }
+            return
+        }
+        self.updateData(on: self.followers)
     }
     
     func configureDataSource() {

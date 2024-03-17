@@ -9,7 +9,7 @@ import UIKit
 import SafariServices
 
 extension UIViewController {
-        
+    
     func presentCustomAlertOnMainThread(title: String, message: String, buttonTitle: String) {
         DispatchQueue.main.async {
             let alertVC = CustomAlertViewController(title: title, message: message, buttonTitle: buttonTitle)
@@ -17,6 +17,13 @@ extension UIViewController {
             alertVC.modalTransitionStyle = .crossDissolve
             self.present(alertVC, animated: true)
         }
+    }
+    
+    func presentDefaultError() {
+        let alertVC = CustomAlertViewController(title: "Opps", message: "We were unable to complete this task now. Please try again later.", buttonTitle: "OK")
+        alertVC.modalPresentationStyle = .overFullScreen
+        alertVC.modalTransitionStyle = .crossDissolve
+        self.present(alertVC, animated: true)
     }
     
     func presentSafariVC(url: URL) {
