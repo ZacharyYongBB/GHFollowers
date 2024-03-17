@@ -8,8 +8,7 @@
 import UIKit
 
 protocol UserInfoVCDelegate: AnyObject {
-    func didTapGitHubProfile(user: UserModel)
-    func didTapGetFollowers(user: UserModel)
+    func didRequestFollowers(username: String)
 }
 
 class UserInfoViewController: CustomDataLoadingViewController {
@@ -21,7 +20,7 @@ class UserInfoViewController: CustomDataLoadingViewController {
     var itemViews: [UIView] = []
     
     var username: String = ""
-    weak var delegate: FollowerListVCDelegate!
+    weak var delegate: UserInfoVCDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,7 +79,7 @@ class UserInfoViewController: CustomDataLoadingViewController {
         
         NSLayoutConstraint.activate([
             headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            headerView.heightAnchor.constraint(equalToConstant: 180),
+            headerView.heightAnchor.constraint(equalToConstant: 210),
             
             itemView1.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: padding),
             itemView1.heightAnchor.constraint(equalToConstant: itemHeight),
@@ -89,7 +88,7 @@ class UserInfoViewController: CustomDataLoadingViewController {
             itemView2.heightAnchor.constraint(equalToConstant: itemHeight),
             
             dateLabel.topAnchor.constraint(equalTo: itemView2.bottomAnchor, constant: padding),
-            dateLabel.heightAnchor.constraint(equalToConstant: 18),
+            dateLabel.heightAnchor.constraint(equalToConstant: 50),
         ])
     }
     
@@ -106,7 +105,7 @@ class UserInfoViewController: CustomDataLoadingViewController {
     
 }
 
-extension UserInfoViewController: UserInfoVCDelegate {
+extension UserInfoViewController: itemInfoVCDelegate {
     func didTapGitHubProfile(user: UserModel) {
         guard let url = URL(string: user.htmlUrl) else {
             presentCustomAlertOnMainThread(title: "Invalid URL", message: "The url attached to this user isnt valid.", buttonTitle: "OK")
