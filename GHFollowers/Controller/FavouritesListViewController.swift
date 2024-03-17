@@ -89,11 +89,13 @@ extension FavouritesListViewController: UITableViewDataSource, UITableViewDelega
         guard editingStyle == .delete else { return }
         
         let favourite = favourites[indexPath.row]
-        favourites.remove(at: indexPath.row)
-        tableView.deleteRows(at: [indexPath], with: .fade)
         
         PersistenceManager.updateWith(favourite: favourite, actionType: .remove) { [weak self] error in
-            guard let error = error else { return }
+            guard let error = error else { 
+                self?.favourites.remove(at: indexPath.row)
+                tableView.deleteRows(at: [indexPath], with: .fade)
+                return
+            }
             self?.presentCustomAlertOnMainThread(title: "Unable to remove", message: error.rawValue, buttonTitle: "OK")
         }
     }
