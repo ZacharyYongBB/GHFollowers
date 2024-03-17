@@ -11,7 +11,7 @@ class SearchViewController: UIViewController {
     
     let logoImageView = UIImageView()
     let usernameTextField = CustomTextField()
-    let callToActionButton = CustomButton(backgroundColor: .systemGreen, title: "Get Followers")
+    let callToActionButton = CustomButton(color: .systemGreen, title: "Get Followers", systemImageName: "person.3")
     var logoImageViewTopConstraints: NSLayoutConstraint!
     
     var isUsernameEntered: Bool {

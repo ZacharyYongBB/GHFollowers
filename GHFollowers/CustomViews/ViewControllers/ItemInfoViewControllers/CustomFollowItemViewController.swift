@@ -17,7 +17,7 @@ class CustomFollowItemViewController: CustomItemInfoViewController {
     private func configureItems() {
         itemInfoView1.set(itemInfoType: .followers, count: user.followers)
         itemInfoView2.set(itemInfoType: .following, count: user.following)
-        actionButton.set(backgroundColor: .systemTeal, title: "Get Followers")
+        actionButton.set(color: .systemTeal, title: "Get Followers", systemImageName: "person.3")
     }
     
     override func actionButtonTapped() {
