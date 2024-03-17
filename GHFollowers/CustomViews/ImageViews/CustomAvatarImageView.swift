@@ -10,7 +10,7 @@ import UIKit
 class CustomAvatarImageView: UIImageView {
 
     let cache = NetworkManager.shared.cache
-    let placeholderImage = UIImage(named: "avatar-placeholder")
+    let placeholderImage = ImagesNamed.placeHolder
     
     override init(frame: CGRect) {
         super.init(frame: frame)
